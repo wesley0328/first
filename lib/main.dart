@@ -8,9 +8,25 @@ void main()
           decoration: TextDecoration.underline),
       );
   var img = Image.network("http://www.tku.edu.tw/images/logo_x2.jpg");
+  // var appBody = Center(
+  //   // child: hiFlutter,
+  //   child:img,
+  //
+  // );
+
   var appBody = Center(
-    // child: hiFlutter,
-    child:img,
+    child: Container(
+      child: hiFlutter,
+      alignment: Alignment.topRight,
+    margin: const EdgeInsets.all(10.0),
+
+    color: Colors.white,
+
+    width: 300.0,
+
+    height: 500.0,
+
+  ),
 
   );
   var appBar = AppBar(
